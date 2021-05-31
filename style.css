@@ -43,6 +43,7 @@ h2 {
   justify-content: center;
 }
 iframe {
+  border: 0;
   height: 100%;
   width: 100%;
 }
