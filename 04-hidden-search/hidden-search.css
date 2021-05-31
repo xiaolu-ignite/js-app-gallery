@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(180deg, #00ca11, rgb(0, 163, 22), #00c510);
+  background-image: linear-gradient(180deg, #00df13, rgb(0, 163, 22), #00c510);
   font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
@@ -23,15 +23,19 @@ body {
 
 .search .input {
   background-color: whitesmoke;
+  padding: 3vw;
+  border: 0;
   font-size: 8vw;
-  height: 15vw;
-  width: 15vw;
+  height: 17vw;
+  width: 17vw;
   opacity: 0;
   transition: width 0.1s ease;
 }
 
 .btn {
   background-image: linear-gradient(180deg, gray, darkgray, gray);
+  padding: 0;
+  border: 0;
   border-radius: 3vw;
   cursor: pointer;
   font-size: 8vw;
@@ -39,8 +43,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 15vw;
-  width: 15vw;
+  height: 17vw;
+  width: 17vw;
   transition: transform 0.1s ease;
 }
 
@@ -53,9 +57,11 @@ body {
   color: rgb(0, 0, 0);
   width: 45vw;
   opacity: 0.5;
+  border-radius: 3vw 0 0 3vw;
+  padding-left: vw;
 }
 
-.search.inactive .search .input {
+.search.active .search .input {
 }
 
 .search.active .btn {
