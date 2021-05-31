@@ -9,31 +9,30 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Meal Finder</title>
+    <title>JavaScript Apps</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Meal Finder</h1>
-      <div class="flex">
-        <form class="flex" id="submit">
-          <input
-            type="text"
-            id="search"
-            placeholder="Search for project"
-          />
-          <button class="search-btn" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
-        <button class="random-btn" id="random">
-          <i class="fas fa-random"></i>
-        </button>
+    
+    <div class="main-container">
+      <div class="title-div">
+        <h2>JavaScript Apps</h2>
+      </div>
+      <div class="apps-div">
+        <div class="app app-01"></div>
+      </div>
+      <div class="apps-div">
+        <div class="app app-04"></div>
+        <div class="app app-05"></div>
+        <div class="app app-06"></div>
+      </div>
+      <div class="apps-div">
+        <div class="app app-02"></div>
+        <div class="app app-03"></div>
       </div>
 
-      <div id="result-heading"></div>
-      <div id="meals" class="meals"></div>
-      <div id="single-meal"></div>
     </div>
+
+    
 
     <script src="script.js"></script>
   </body>
