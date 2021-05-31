@@ -6,11 +6,10 @@
 
 body {
   background-image: linear-gradient(
-    225deg,
-    rgb(0, 50, 0),
-    rgb(0, 130, 0),
-    rgb(0, 150, 10),
-    rgb(0, 190, 0)
+    180deg,
+    rgb(141, 141, 141),
+    rgb(182, 181, 181),
+    rgb(255, 255, 255)
   );
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -35,11 +34,17 @@ body {
   height: 17vw;
   width: 17vw;
   opacity: 0;
-  transition: width 0.1s ease;
+  transition: width 0.4s ease 0.3;
 }
 
 .btn {
-  background-image: linear-gradient(180deg, gray, darkgray, gray);
+  background-image: linear-gradient(
+    225deg,
+    rgb(114, 14, 14),
+    rgb(114, 14, 14),
+    rgb(250, 15, 15)
+  );
+
   padding: 0;
   border: 0;
   border-radius: 3vw;
@@ -51,7 +56,7 @@ body {
   left: 0;
   height: 17vw;
   width: 17vw;
-  transition: transform 0.1s ease;
+  transition: transform 0.4s ease;
 }
 
 .btn:focus,
@@ -73,4 +78,10 @@ body {
 .search.active .btn {
   transform: translateX(45vw);
   border-radius: 0 3vw 3vw 0;
+  background-image: linear-gradient(
+    225deg,
+    rgb(12, 116, 41),
+    rgb(12, 116, 41),
+    rgb(13, 224, 55)
+  );
 }
