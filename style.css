@@ -1,83 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(248, 248, 248);
+  background-image: url('./img/js-code.jfif');
+  background-size: cover;
+
   color: #2d2013;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin: 0;
 }
-
 .main-container {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(10, 10, 10);
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+.title-div-background {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-size: cover;
+  position: relative;
   justify-content: center;
-  text-align: center;
-  width: 99%;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
 }
-.title-div {
-  background-color: rgb(163, 243, 13);
-  width: 99.7%;
-}
+
 h2 {
-  font-size: 10vh;
-  color: rgb(238, 72, 6);
-  padding: 30vh 0;
+  position: relative;
+  font-size: 20vh;
+  color: yellow;
+  text-align: center;
 }
 
 .apps-div {
-  background-color: #fff;
-  width: 99.7%;
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+iframe {
+  height: 100%;
+  width: 100%;
+}
 .app {
   height: 55vh;
 }
 .app-01 {
   background-color: rgb(246, 3, 3);
-  width: 99.5%;
+  width: 99%;
 }
-
 .app-02 {
-  background-color: yellow;
-  width: 39.75%;
+  background-color: rgb(163, 163, 34);
+  width: 40%;
 }
-
 .app-03 {
   background-color: rgb(5, 216, 93);
-  width: 59.75%;
+  width: 59%;
 }
-
 .app-04 {
   background-color: rgb(0, 144, 240);
   width: 55%;
 }
-
 .app-05 {
   background-color: rgb(255, 81, 0);
-  width: 22.25%;
+  width: 22%;
 }
-
 .app-06 {
   background-color: rgb(98, 1, 226);
-  width: 22.25%;
+  width: 22%;
 }
-
 @media (max-width: 1350px) {
 }
 @media (max-width: 1200px) {
 }
 @media (max-width: 1024px) {
+  h2 {
+    font-size: 10vh;
+    padding: 15vh 0;
+  }
 }
 @media (max-width: 860px) {
   .apps-div {
