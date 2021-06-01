@@ -5,12 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(
-    180deg,
-    rgb(141, 141, 141),
-    rgb(182, 181, 181),
-    rgb(255, 255, 255)
-  );
+  background-color: rgb(15, 15, 79);
   font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
