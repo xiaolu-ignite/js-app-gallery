@@ -28,7 +28,7 @@ body {
 
 h2 {
   position: relative;
-  font-size: 20vh;
+  font-size: 19vh;
   color: yellow;
   text-align: center;
 }
@@ -53,7 +53,8 @@ iframe {
 }
 .app-01 {
   background-color: whitesmoke;
-  width: 99%;
+  width: 100%;
+  height: 33vh;
 }
 .app-02 {
   background-color: rgb(163, 163, 34);
@@ -65,15 +66,14 @@ iframe {
 }
 .app-04 {
   background-color: rgb(0, 144, 240);
-  width: 55%;
+  width: 50%;
 }
 .app-05 {
-  background-color: rgb(255, 81, 0);
-  width: 22%;
+  width: 30%;
 }
 .app-06 {
   background-color: rgb(98, 1, 226);
-  width: 22%;
+  width: 20%;
 }
 
 @media (max-width: 1350px) {

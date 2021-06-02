@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  background-color: #fafafa;
+  background-color: wheat;
   transform-origin: top left;
   transition: transform 0.5s linear;
   width: 100vw;
@@ -24,22 +24,26 @@ body {
 
 .container.show-nav {
   transform: rotate(-20deg);
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .circle-container {
   position: fixed;
-  top: -3vh;
-  left: -3vh;
+  top: -4vh;
+  left: -4vh;
+  z-index: +100;
 }
 
 .circle {
-  background-color: #ff7979;
-  height: 20vh;
-  width: 20vh;
+  background-image: linear-gradient(
+    10deg,
+    rgb(1, 74, 22),
+    rgb(12, 116, 41),
+    rgb(13, 224, 55)
+  );
+  height: 22vh;
+  width: 22vh;
   border-radius: 50%;
-  position: relative;
-  transition: transform 0.5s linear;
   align-items: center;
   justify-content: center;
 }
@@ -50,8 +54,8 @@ button {
   position: relative;
   height: 12vh;
   width: 12vh;
-  top: 30%;
-  left: 30%;
+  top: 33%;
+  left: 33%;
   border: 0;
   border-radius: 50%;
   background: transparent;
@@ -86,7 +90,7 @@ nav ul {
 
 nav ul li {
   text-transform: uppercase;
-  color: rgb(204, 204, 204);
+  color: rgb(252, 252, 252);
   margin: 40px 0;
   transform: translateX(-100%);
   transition: transform 0.4s ease-in;

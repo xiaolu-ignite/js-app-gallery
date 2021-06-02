@@ -30,7 +30,7 @@ body {
   position: relative;
   margin-bottom: 30px;
   max-width: 100%;
-  width: 350px;
+  width: 50vw;
 }
 
 .progress-container::before {
@@ -78,12 +78,12 @@ body {
   background-color: var(--line-border-fill);
   color: #fff;
   border: 0;
-  border-radius: 6px;
+  border-radius: 21%;
   cursor: pointer;
   font-family: inherit;
-  padding: 8px 30px;
-  margin: 5px;
-  font-size: 14px;
+  width: 32%;
+  margin: 15px;
+  font-size: 7vh;
 }
 
 .btn:active {
