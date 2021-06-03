@@ -1,0 +1,164 @@
+a {
+  text-decoration: none;
+  color: rgb(0, 145, 12);
+  font-family: sans-serif;
+  font-size: 45px;
+  border: 5px solid #072c08;
+  border-radius: 6%;
+  padding: 30px 30px;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+/* buttons */
+#btn-0:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: yellow;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+  transition: all 1s ease;
+}
+#btn-0:hover:before {
+  transform: rotate(0deg);
+}
+#btn-0:hover {
+  color: black;
+  font-size: 52px;
+}
+
+#btn-1:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(4, 88, 29);
+  z-index: -1;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+#btn-1:hover::before {
+  transform: translateY(0);
+}
+#btn-1:hover {
+  color: rgb(12, 226, 76);
+}
+
+#btn-2:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(80, 114, 122);
+  z-index: -1;
+  transition: all 1s;
+  transform: rotateX(-90deg);
+}
+#btn-2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(17, 13, 224);
+  z-index: -1;
+  transition: all 1s;
+  transform: rotateY(-90deg);
+}
+#btn-2:hover:before {
+  transform: rotateX(0deg);
+}
+#btn-2:hover:after {
+  transform: rotateY(0deg);
+}
+#btn-2:hover {
+  border: 0;
+  color: rgb(129, 227, 252);
+}
+
+#btn-3:hover {
+  background-color: rgb(245, 221, 221);
+  color: rgb(240, 8, 8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 10px solid rgb(240, 8, 8);
+}
+
+#btn-4:before {
+  content: 'READY!';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  color: black;
+  font-weight: 900;
+  font-size: 35px;
+  transform: translateY(-100%);
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn-4:hover::before {
+  transform: translateY(0);
+}
+
+#background:hover {
+  background-color: rgb(0, 141, 31);
+  color: whitesmoke;
+}
+#color:hover {
+  color: rgb(0, 167, 238);
+}
+#color:hover {
+  font-size: 60px;
+}
+#height:hover {
+  height: 150px;
+}
+#width:hover {
+  width: 340px;
+}
+#letter-spacing:hover {
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+#line-height:hover {
+  line-height: 90px;
+}
+#margin-bottom:hover {
+  margin-bottom: 50px;
+}
+#margin-top:hover {
+  margin-top: 50px;
+}
+#opacity:hover {
+  opacity: 0.3;
+}
+#padding:hover {
+  padding: 45px;
+}
+#border-color,
+.border-width {
+  border: 6px solid rgb(2, 92, 21);
+}
+#border-color:hover {
+  border-color: rgb(7, 236, 38);
+}
+#border-width:hover {
+  border-width: 30px;
+  color: rgb(76, 134, 88);
+}

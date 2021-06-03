@@ -4,8 +4,6 @@
 }
 
 body {
-  background-image: url('./img/js-code.jfif');
-  background-size: cover;
   color: #2d2013;
   display: flex;
   flex-direction: column;
@@ -13,13 +11,15 @@ body {
   margin: 0;
 }
 .main-container {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-image: url('./img/js-code.jfif');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 .title-div-background {
+  background-color: black;
   position: relative;
   justify-content: center;
   font-family: 'Poppins', sans-serif;
@@ -37,6 +37,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.55);
   border: 0;
   width: 85%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,12 +58,14 @@ iframe {
   height: 33vh;
 }
 .app-02 {
-  background-color: rgb(163, 163, 34);
+  background-color: rgb(230, 230, 226);
   width: 40%;
+  height: 80vh;
 }
 .app-03 {
   background-color: rgb(5, 216, 93);
   width: 59%;
+  height: 80vh;
 }
 .app-04 {
   background-color: rgb(0, 144, 240);
@@ -73,6 +76,19 @@ iframe {
 }
 .app-06 {
   width: 20%;
+}
+
+footer {
+  height: fit-content;
+  border: 0;
+}
+
+.footer-container {
+  margin-top: 2vh;
+  width: 100vw;
+  height: 50vh;
+  background-color: rgb(47, 48, 44);
+  margin: 0;
 }
 
 @media (max-width: 1350px) {
