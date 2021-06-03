@@ -121,7 +121,7 @@ nav ul li + li + li {
 }
 
 .content h1 {
-  margin: 0;
+  margin-bottom: 2vh;
 }
 
 .content small {
