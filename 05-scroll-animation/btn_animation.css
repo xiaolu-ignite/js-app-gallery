@@ -30,7 +30,8 @@ a {
 }
 #btn-0:hover {
   color: black;
-  font-size: 52px;
+  font-style: italic;
+  font-weight: 450;
 }
 
 #btn-1:before {
@@ -83,8 +84,9 @@ a {
   transform: rotateY(0deg);
 }
 #btn-2:hover {
+  transform: scale(1.7);
   border: 0;
-  color: rgb(129, 227, 252);
+  color: whitesmoke;
 }
 
 #btn-3:hover {
@@ -96,13 +98,13 @@ a {
 }
 
 #btn-4:before {
-  content: 'READY!';
+  content: 'ORDER';
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: orange;
+  background-color: aquamarine;
   color: black;
   font-weight: 900;
   font-size: 35px;
@@ -114,6 +116,97 @@ a {
 }
 #btn-4:hover::before {
   transform: translateY(0);
+}
+
+#btn-5:before {
+  content: '';
+  background-color: whitesmoke;
+  left: 0;
+  top: 50px;
+  height: 50px;
+  width: 48vw;
+  position: absolute;
+  transition: all 0.9s;
+  transform: translateX(-100%) rotate(45deg);
+}
+#btn-5:hover:before {
+  transform: translateX(100%) rotate(45deg);
+}
+#btn-5:hover {
+  color: darkgray;
+  background-color: rgb(26, 73, 32);
+  border-color: grey;
+}
+
+#btn-6 {
+  color: transparent !important;
+  overflow: hidden;
+  background-color: rgb(34, 14, 209);
+  border-color: rgb(7, 124, 133);
+}
+#btn-6:hover {
+  border-color: rgb(19, 190, 202);
+}
+#btn-6::before {
+  content: 'Done';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+#btn-6::after {
+  content: 'Checkout';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(207, 143, 6);
+  color: whitesmoke;
+  border-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: translate(-100%, 100%);
+}
+#btn-6:hover:before {
+  transform: translate(100%, -100%);
+}
+#btn-6:hover:after {
+  transform: translate(0, 0);
+  border-color: whitesmoke;
+}
+
+#btn-7:before {
+  content: 'Hover';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(177, 8, 120);
+  color: whitesmoke;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(5);
+  opacity: 0;
+  transition: all 0.5s;
+}
+#btn-7:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+#btn-7:hover {
+  border-color: whitesmoke;
 }
 
 #background:hover {
