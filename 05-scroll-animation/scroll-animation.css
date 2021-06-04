@@ -54,3 +54,8 @@ h1 {
 .box.show {
   transform: translateX(0);
 }
+
+p {
+  margin-right: 5vw;
+  top: 0;
+}

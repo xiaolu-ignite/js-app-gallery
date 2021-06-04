@@ -25,7 +25,11 @@ function createBoxes(numOfBoxes) {
   for(i=0; i<numOfBoxes; i++) {
     const element = document.createElement('div')
     element.classList.add("box")
-    element.innerHTML = `<a class="btn" id="btn-${i}" href="#">HOVER</a>`
+    element.innerHTML = `
+      <p>${i+1}</p>
+      <a class="btn" id="btn-${i}" href="#">HOVER</a>
+      
+      `
     card_container.appendChild(element)
   }
 }
