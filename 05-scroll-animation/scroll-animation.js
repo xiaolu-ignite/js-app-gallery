@@ -1,10 +1,18 @@
 window.addEventListener('scroll', checkBoxes)
 const card_container = document.getElementById("card-container")
-const buttons = document.querySelectorAll(".btn")
+
+
+createBoxes(15)
 
 
 
-createBoxes(12)
+addSpan(12)
+function addSpan() {
+  const buttons = document.querySelectorAll(".btn")
+  buttons[12].innerHTML = '<span>HOVER</span>'
+  console.log(buttons[12].innerHTML)
+}
+
 const boxes = document.querySelectorAll(".box")
 checkBoxes()
 
@@ -33,4 +41,17 @@ function createBoxes(numOfBoxes) {
     card_container.appendChild(element)
   }
 }
+
+const body = document.querySelector('body');
+console.log(body);
+const colors = ['black', 'darkgreen', 'black', 'green', 'black', 'darkgreen', 'black', 'green', 'black'];
+var currentIndex = 0;
+setInterval(function () {
+  document.body.style.backgroundColor = colors[currentIndex]+'';
+   if (!colors[currentIndex]) {
+       currentIndex = 0;
+   } else {
+       currentIndex++;
+   }
+}, 3000);
 
