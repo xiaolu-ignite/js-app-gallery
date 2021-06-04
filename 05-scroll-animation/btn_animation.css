@@ -475,6 +475,44 @@
   color: rgb(238, 230, 238);
 }
 
+#btn-12 {
+  border: 0;
+
+  color: rgb(202, 202, 202);
+}
+#btn-12:hover {
+  color: whitesmoke;
+}
+#btn-12::before {
+  content: '';
+  position: absolute;
+  height: 20vh;
+  width: 33vw;
+  top: -2vh;
+  left: 0;
+  border-left: 2px solid gold;
+  border-right: 2px solid blue;
+  transition: all 1s;
+}
+#btn-12::after {
+  content: '';
+  position: absolute;
+  height: 15vh;
+  width: 39vw;
+  top: 0vh;
+  left: -3vw;
+  border-top: 2px solid red;
+  border-bottom: 2px solid yellowgreen;
+  transition: all 0.5s;
+  transition-delay: 0.4s;
+}
+#btn-12:hover::before {
+  transform: rotateY(180deg);
+}
+#btn-12:hover::after {
+  transform: rotateX(180deg);
+}
+
 /* Group 2*/
 #background:hover {
   background-color: rgb(0, 141, 31);
