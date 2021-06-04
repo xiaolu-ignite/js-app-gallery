@@ -4,7 +4,7 @@ const buttons = document.querySelectorAll(".btn")
 
 
 
-createBoxes(15)
+createBoxes(12)
 const boxes = document.querySelectorAll(".box")
 checkBoxes()
 
@@ -26,7 +26,7 @@ function createBoxes(numOfBoxes) {
     const element = document.createElement('div')
     element.classList.add("box")
     element.innerHTML = `
-      <p>${i+1}</p>
+      <p>${i}</p>
       <a class="btn" id="btn-${i}" href="#">HOVER</a>
       
       `
