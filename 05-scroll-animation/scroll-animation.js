@@ -44,7 +44,7 @@ function createBoxes(numOfBoxes) {
 
 const body = document.querySelector('body');
 console.log(body);
-const colors = ['black', 'darkgreen', 'black', 'green', 'black', 'darkgreen', 'black', 'green', 'black'];
+const colors = ['grey', 'darkgreen','grey'];
 var currentIndex = 0;
 setInterval(function () {
   document.body.style.backgroundColor = colors[currentIndex]+'';
@@ -53,5 +53,5 @@ setInterval(function () {
    } else {
        currentIndex++;
    }
-}, 3000);
+}, 5000);
 
