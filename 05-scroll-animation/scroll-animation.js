@@ -44,7 +44,7 @@ function createBoxes(numOfBoxes) {
 
 const body = document.querySelector('body');
 console.log(body);
-const colors = ['grey', 'darkgreen','grey'];
+const colors = ['green', 'darkgreen','grey'];
 var currentIndex = 0;
 setInterval(function () {
   document.body.style.backgroundColor = colors[currentIndex]+'';
