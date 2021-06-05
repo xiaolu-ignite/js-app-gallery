@@ -7,7 +7,7 @@ a {
   border-radius: 6%;
   padding: 30px 30px;
   position: relative;
-  overflow: show;
+  overflow: hidden;
   transition: all 1s;
 }
 /* Group 1*/
@@ -703,7 +703,7 @@ a {
   color: whitesmoke;
 }
 #btn-13:hover {
-  color: #d3d3d3;
+  color: silver;
 }
 #btn-13::before {
   content: '';
@@ -712,7 +712,7 @@ a {
   width: 50%;
   left: -1%;
   top: -5%;
-  background-color: #ee5253;
+  background-color: rgb(0, 146, 231);
   transform: skewX(30deg);
   z-index: -1;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -729,7 +729,7 @@ a {
   width: 50%;
   left: 51%;
   top: 5%;
-  background-color: darkblue;
+  background-color: green;
   transform: skewX(30deg);
   z-index: -1;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -738,6 +738,82 @@ a {
   transform: skewX(0deg);
   left: 0%;
   top: 0;
+}
+
+#btn-14 {
+  border-radius: 100px;
+}
+#btn-14:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#btn-14:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+#btn-14::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(102, 102, 102);
+  border-radius: 100px;
+  transition: all 0.4s;
+  z-index: -1;
+}
+#btn-14:hover:before {
+  transform: scaleX(0.4) scaleY(1.6);
+  opacity: 0;
+}
+
+#btn-15 {
+  color: black;
+  font-style: italic;
+  border: 0;
+  background-color: whitesmoke;
+  z-index: -1;
+}
+#btn-15:hover {
+  background-color: transparent;
+  color: greenyellow;
+  line-height: 150%;
+  z-index: -1;
+}
+#btn-15::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 40px solid darkgreen;
+  border-bottom: 40px solid green;
+  border-right: 40px solid transparent;
+  transition: all 0.5s;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+#btn-15:hover::before {
+  transform: translateX(0%);
+}
+#btn-15::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 40px solid darkgreen;
+  border-bottom: 40px solid green;
+  border-left: 40px solid transparent;
+  transition: all 0.5s;
+  z-index: -1;
+  transform: translateX(100%);
+}
+#btn-15:hover::after {
+  transform: translateX(0%);
 }
 
 /* Group 2*/

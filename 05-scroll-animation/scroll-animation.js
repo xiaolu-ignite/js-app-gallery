@@ -2,16 +2,7 @@ window.addEventListener('scroll', checkBoxes)
 const card_container = document.getElementById("card-container")
 
 
-createBoxes(15)
-
-
-
-addSpan(12)
-function addSpan() {
-  const buttons = document.querySelectorAll(".btn")
-  buttons[12].innerHTML = '<span>HOVER</span>'
-  console.log(buttons[12].innerHTML)
-}
+createBoxes(16)
 
 const boxes = document.querySelectorAll(".box")
 checkBoxes()
@@ -34,7 +25,6 @@ function createBoxes(numOfBoxes) {
     const element = document.createElement('div')
     element.classList.add("box")
     element.innerHTML = `
-      <p>${i}</p>
       <a class="btn" id="btn-${i}" href="#">HOVER</a>
       
       `
