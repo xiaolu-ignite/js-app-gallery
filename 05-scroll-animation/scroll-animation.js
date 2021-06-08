@@ -1,7 +1,6 @@
 window.addEventListener('scroll', checkBoxes)
 const card_container = document.getElementById("card-container")
 
-
 createBoxes(16)
 
 const boxes = document.querySelectorAll(".box")

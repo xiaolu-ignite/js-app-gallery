@@ -11,6 +11,7 @@ body {
   margin: 0;
 }
 .main-container {
+  padding: 2vh 0 2vh 0;
   background-image: url('./img/coding4k.jpg');
   background-size: cover;
   display: flex;
@@ -34,7 +35,6 @@ h2 {
 }
 
 .apps-div {
-  background-color: rgba(0, 0, 0, 0.55);
   border: 0;
   width: 85%;
 
